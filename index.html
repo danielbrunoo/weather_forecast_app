@@ -9,22 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <title>Previsão do Tempo</title>
 </head>
 
 <body>
-    <div>
-        <input placeholder="Digite o nome da cidade">
-        <button>Buscar</button>
+    <div class="larger-box">
+        <input class="input-city" placeholder="Digite o nome da cidade">
+        <button class="search-button" onclick="forecastSearch()">
+            <img class="img-search" src="https://www.svgrepo.com/show/488200/find.svg" alt="search">
 
-        <h2>Tempo em São Paulo</h2>
+        </button>
 
-        <p>21°C</p>
+        <div class="medium-box">
+            <h2 class="city">Tempo em São Paulo</h2>
 
-        <img alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png">
-        <p>Nublado</p>
+            <p class="weather">21°C</p>
 
-        <p>Umidade: 76%</p>
+            <div class="small-box">
+                <img class="img-forecast" alt="weather-info-icon" src="https://openweathermap.org/img/wn/04n.png">
+                
+                <p class="text-forecast">Nublado</p>
+            </div>
+
+            <p class="humidity">Umidade: 76%</p>
+        </div>
     </div>
 </body>
 
